@@ -1,0 +1,18 @@
+app:
+  name: go-web
+  mode: release
+  server:
+    port: 9024
+  database:
+    - name: postgres
+      type: postgres
+      host: localhost
+      port: 5432
+      dbname: postgres
+      username: root
+      password: root
+  log:
+    full:
+      path: E:\\
+    err:
+      path: E:\\
