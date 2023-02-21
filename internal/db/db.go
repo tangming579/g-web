@@ -3,8 +3,8 @@ package db
 import (
 	"fmt"
 	"go-web/internal/config"
-	"gorm.io/gorm/logger"
 
+	"go-web/internal/logger"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
