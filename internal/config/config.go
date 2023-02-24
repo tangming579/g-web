@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	configPath = *kingpin.Flag("config", "path to config file").Default(".").String()
+	configPath = *kingpin.Flag("config", "path to config file").Default("./config/app.yaml").String()
 	AppConfig  *viper.Viper
 )
 
@@ -22,6 +22,7 @@ func loadAppConfig() {
 	AppConfig.SetConfigName("app")
 	//设置文件类型
 	AppConfig.SetConfigType("yaml")
+	configPath = "config"
 	//设置文件所在路径
 	AppConfig.AddConfigPath(configPath)
 	err := AppConfig.ReadInConfig()

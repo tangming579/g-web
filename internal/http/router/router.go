@@ -6,7 +6,7 @@ import (
 )
 
 func init() {
-	RouteInfo.addRoute("api", func(group *gin.RouterGroup) {
-		group.GET("/user/", api.GetUserInfo)
+	RouteInfo.addRoute("/api", func(group *gin.RouterGroup) {
+		group.GET("/user/:userId", api.GetUserInfo)
 	})
 }
