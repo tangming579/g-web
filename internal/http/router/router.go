@@ -6,7 +6,10 @@ import (
 )
 
 func init() {
-	RouteInfo.addRoute("/api", func(group *gin.RouterGroup) {
-		group.GET("/user/:userId", api.GetUserInfo)
+	RouteInfo.addRoute("/api/user", func(group *gin.RouterGroup) {
+		group.GET("/:userId", api.GetUserInfo)
+		group.DELETE("/:userId", api.DeleteUser)
+		group.PUT("/:userId", api.UpdateUser)
+		group.POST("", api.CreateUser)
 	})
 }
