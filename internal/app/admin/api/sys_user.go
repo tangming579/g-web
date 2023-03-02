@@ -6,6 +6,7 @@ import (
 	"go-web/internal/http/response"
 	sysLogger "go-web/internal/logger"
 	"go-web/internal/models"
+	"strconv"
 )
 
 func GetUserInfo(c *gin.Context) {
@@ -16,6 +17,21 @@ func GetUserInfo(c *gin.Context) {
 	}
 	object := service.GetUser(userId)
 	response.Ok(c, object)
+	return
+}
+
+func GetUserList(c *gin.Context) {
+	pageNum, err := strconv.Atoi(c.Query("pageNum"))
+	if err != nil {
+		pageNum = 1
+	}
+	pageSize, err := strconv.Atoi(c.Query("pageSize"))
+	if err != nil {
+		pageSize = 10
+	}
+
+	users, total := service.GetUserList(pageSize, pageNum)
+	response.Ok(c, gin.H{"list": users, "total": total})
 	return
 }
 

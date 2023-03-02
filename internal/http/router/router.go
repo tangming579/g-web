@@ -8,6 +8,7 @@ import (
 func init() {
 	RouteInfo.addRoute("/api/user", func(group *gin.RouterGroup) {
 		group.GET("/:userId", api.GetUserInfo)
+		group.GET("", api.GetUserList)
 		group.DELETE("/:userId", api.DeleteUser)
 		group.PUT("/:userId", api.UpdateUser)
 		group.POST("", api.CreateUser)

@@ -12,6 +12,14 @@ func GetUser(userId string) (model *models.SysUser) {
 	return
 }
 
+func GetUserList(pageSize int, pageNum int) (users *[]models.SysUser, total int64) {
+	syslogger.Info("getList")
+	db.Datasource["postgres"].DB.Table("sys_user").Count(&total)
+	db.Datasource["postgres"].DB.Table("sys_user").Limit(pageSize).Offset((pageNum - 1) * pageSize).
+		Find(&users)
+	return
+}
+
 func DeleteUser(userId string) (model *models.SysUser) {
 	syslogger.Info("delete")
 	db.Datasource["postgres"].DB.Table("sys_user").Where("\"usercode\"=?", userId).Delete(&model)
