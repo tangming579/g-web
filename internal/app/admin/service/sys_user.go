@@ -8,31 +8,31 @@ import (
 
 func GetUser(userId string) (model *models.SysUser) {
 	syslogger.Info("get")
-	db.Datasource["postgres"].DB.Table("sys_user").Where("\"usercode\"=?", userId).Take(&model)
+	db.DB.Table("sys_user").Where("\"usercode\"=?", userId).Take(&model)
 	return
 }
 
 func GetUserList(pageSize int, pageNum int) (users *[]models.SysUser, total int64) {
 	syslogger.Info("getList")
-	db.Datasource["postgres"].DB.Table("sys_user").Count(&total)
-	db.Datasource["postgres"].DB.Table("sys_user").Limit(pageSize).Offset((pageNum - 1) * pageSize).
+	db.DB.Table("sys_user").Count(&total)
+	db.DB.Table("sys_user").Limit(pageSize).Offset((pageNum - 1) * pageSize).
 		Find(&users)
 	return
 }
 
 func DeleteUser(userId string) (model *models.SysUser) {
 	syslogger.Info("delete")
-	db.Datasource["postgres"].DB.Table("sys_user").Where("\"usercode\"=?", userId).Delete(&model)
+	db.DB.Table("sys_user").Where("\"usercode\"=?", userId).Delete(&model)
 	return
 }
 
 func CreateUser(userInfo models.SysUser) {
 	syslogger.Info("create")
-	db.Datasource["postgres"].DB.Table("sys_user").Create(&userInfo)
+	db.DB.Table("sys_user").Create(&userInfo)
 }
 
 func UpdateUser(userInfo models.SysUser) {
 	syslogger.Info("update")
-	db.Datasource["postgres"].DB.Table("sys_user").Where("\"usercode\"=?", userInfo.Usercode).
+	db.DB.Table("sys_user").Where("\"usercode\"=?", userInfo.Usercode).
 		Save(&userInfo)
 }

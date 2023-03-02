@@ -9,8 +9,6 @@ import (
 	"gorm.io/gorm"
 )
 
-type DatabaseMap map[string]*Database
-
 type Database struct {
 	name     string
 	dbType   string
@@ -22,10 +20,10 @@ type Database struct {
 	DB       *gorm.DB
 }
 
-var Datasource DatabaseMap
+var Datasource *Database
+var DB *gorm.DB
 
 func init() {
-	Datasource = make(DatabaseMap)
 	dbconfig := config.AppConfig.Get("app.database")
 	for _, dbinfo := range dbconfig.([]interface{}) {
 		name := dbinfo.(map[string]interface{})["name"].(string)
@@ -44,21 +42,16 @@ func init() {
 			username: username,
 			password: password,
 		}
-		Datasource[name] = &db
+		Datasource = &db
 	}
 }
 func InitDB() {
 	logger.Info("(启动中) 初始化数据库...")
-	var err error
-	for dbname, dbinfo := range Datasource {
-		switch dbinfo.dbType {
-		case "postgres":
-			err = initPg(dbinfo)
-		}
-		if err != nil {
-			panic(fmt.Errorf("初始化数据库:%s 失败: %v", dbname, err))
-		}
+	err := initPg(Datasource)
+	if err != nil {
+		panic(fmt.Errorf("初始化数据库 失败: %v", err))
 	}
+	DB = Datasource.DB
 }
 func initPg(dbinfo *Database) error {
 	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%d sslmode=disable TimeZone=Asia/Shanghai",
