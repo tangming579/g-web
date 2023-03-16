@@ -16,3 +16,7 @@ app:
       path: E:\\
     err:
       path: E:\\
+consul:
+  address: localhost:8500
+  schema: http
+  token: 8f802f1f-4ce7-40b1-8fe5-83470cf75ba4
