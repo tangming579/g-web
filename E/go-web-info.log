@@ -1,0 +1,64 @@
+{"level":"INFO","log-time":"2023-05-31 17:09:52.338","file":"logger/logger.go:54","message":"(启动中) 加载logger"}
+{"level":"INFO","log-time":"2023-05-31 17:09:52.470","file":"logger/logger.go:59","message":"(启动中) 应用启动: 应用名: go-web, 端口: :9024, 环境:release"}
+{"level":"INFO","log-time":"2023-05-31 17:09:52.470","file":"logger/logger.go:59","message":"(启动中) 初始化数据库..."}
+{"level":"INFO","log-time":"2023-05-31 17:13:01.860","file":"logger/logger.go:54","message":"(启动中) 加载logger"}
+{"level":"INFO","log-time":"2023-05-31 17:13:01.902","file":"logger/logger.go:59","message":"(启动中) 应用启动: 应用名: go-web, 端口: :9024, 环境:release"}
+{"level":"INFO","log-time":"2023-05-31 17:13:01.904","file":"logger/logger.go:59","message":"(启动中) 加载路由表:/api/user"}
+{"level":"INFO","log-time":"2023-05-31 17:13:09.583","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 17:13:30.344","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 17:13:32.176","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 17:15:34.414","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 17:17:08.310","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 17:23:00.161","file":"logger/logger.go:54","message":"(启动中) 加载logger"}
+{"level":"INFO","log-time":"2023-05-31 17:23:00.269","file":"logger/logger.go:59","message":"(启动中) 应用启动: 应用名: go-web, 端口: :9024, 环境:release"}
+{"level":"INFO","log-time":"2023-05-31 17:23:00.269","file":"logger/logger.go:59","message":"(启动中) 初始化数据库..."}
+{"level":"INFO","log-time":"2023-05-31 18:21:31.910","file":"logger/logger.go:54","message":"(启动中) 加载logger"}
+{"level":"INFO","log-time":"2023-05-31 18:21:32.050","file":"logger/logger.go:59","message":"(启动中) 应用启动: 应用名: go-web, 端口: :9024, 环境:release"}
+{"level":"INFO","log-time":"2023-05-31 18:21:32.051","file":"logger/logger.go:59","message":"(启动中) 初始化数据库..."}
+{"level":"INFO","log-time":"2023-05-31 18:27:43.418","file":"logger/logger.go:54","message":"(启动中) 加载logger"}
+{"level":"INFO","log-time":"2023-05-31 18:27:43.552","file":"logger/logger.go:59","message":"(启动中) 应用启动: 应用名: go-web, 端口: :9024, 环境:release"}
+{"level":"INFO","log-time":"2023-05-31 18:27:43.552","file":"logger/logger.go:59","message":"(启动中) 初始化数据库..."}
+{"level":"INFO","log-time":"2023-05-31 18:27:43.797","file":"logger/logger.go:59","message":"(启动中) 加载路由表:/api/user"}
+{"level":"INFO","log-time":"2023-05-31 18:27:55.778","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:28:00.344","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:28:01.494","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:28:03.859","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:28:06.799","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:29:41.773","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:29:44.604","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:29:48.575","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:29:50.013","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:30:29.893","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:30:30.485","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:30:31.110","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:30:31.661","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:30:32.033","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:30:32.257","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:30:32.438","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:30:32.615","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:30:32.781","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:30:32.934","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:30:33.071","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:30:33.222","file":"logger/logger.go:59","message":"getList"}
+{"level":"INFO","log-time":"2023-05-31 18:32:04.857","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:32:07.023","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:32:07.989","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:32:13.217","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:32:14.242","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:32:16.228","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:32:17.473","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:32:18.310","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:36:33.606","file":"logger/logger.go:54","message":"(启动中) 加载logger"}
+{"level":"INFO","log-time":"2023-05-31 18:36:33.757","file":"logger/logger.go:59","message":"(启动中) 应用启动: 应用名: go-web, 端口: :9024, 环境:release"}
+{"level":"INFO","log-time":"2023-05-31 18:36:33.757","file":"logger/logger.go:59","message":"(启动中) 初始化数据库..."}
+{"level":"INFO","log-time":"2023-05-31 18:36:34.024","file":"logger/logger.go:59","message":"(启动中) 加载路由表:/api/user"}
+{"level":"INFO","log-time":"2023-05-31 18:36:42.596","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:36:43.659","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:36:44.685","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:36:45.514","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:36:46.236","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:36:46.990","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:36:48.023","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:36:48.984","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:36:49.952","file":"logger/logger.go:59","message":"get user"}
+{"level":"INFO","log-time":"2023-05-31 18:36:51.373","file":"logger/logger.go:59","message":"get user"}

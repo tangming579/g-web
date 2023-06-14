@@ -15,8 +15,9 @@ func GetUserInfo(c *gin.Context) {
 		response.Failure(c, "userId不能为空")
 		return
 	}
-	object := service.GetUser(userId)
-	response.Ok(c, object)
+	sysLogger.Info("get user")
+	//object := service.GetUser(userId)
+	response.Ok(c, nil)
 	return
 }
 
